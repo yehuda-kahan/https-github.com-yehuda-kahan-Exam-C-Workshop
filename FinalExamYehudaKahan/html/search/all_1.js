@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['util_2eh_1',['Util.h',['../_util_8h.html',1,'']]]
+  ['deletestack_1',['DeleteStack',['../_stack_8h.html#ac2565fa4934a779402996e4007598fcc',1,'Stack.c']]]
 ];

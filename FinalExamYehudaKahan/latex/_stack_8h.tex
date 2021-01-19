@@ -1,0 +1,162 @@
+\hypertarget{_stack_8h}{}\doxysection{Stack.\+h File Reference}
+\label{_stack_8h}\index{Stack.h@{Stack.h}}
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_node__t}{Node\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Represent a stack node witch contain a value and pointer to the next (previus) value. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Represent the stack. contain the pointer to the start of the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_stack_8h_afceb75332628ecda1b4793a63b70f00c}\label{_stack_8h_afceb75332628ecda1b4793a63b70f00c}} 
+\#define {\bfseries S\+T\+A\+C\+K\+\_\+\+E\+M\+P\+TY}~I\+N\+T\+\_\+\+M\+IN
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_stack_8h_a9582e6e8e21f2a935d9f19fc744bc7a4}\label{_stack_8h_a9582e6e8e21f2a935d9f19fc744bc7a4}} 
+typedef int {\bfseries T}
+\item 
+\mbox{\Hypertarget{_stack_8h_afea10d386f9d1ac7ea594582204021eb}\label{_stack_8h_afea10d386f9d1ac7ea594582204021eb}} 
+typedef struct \mbox{\hyperlink{struct_node__t}{Node\+\_\+t}} \mbox{\hyperlink{_stack_8h_afea10d386f9d1ac7ea594582204021eb}{Node}}
+\begin{DoxyCompactList}\small\item\em Represent a stack node witch contain a value and pointer to the next (previus) value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}\label{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}} 
+typedef struct \mbox{\hyperlink{struct_stack__t}{Stack\+\_\+t}} \mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}}
+\begin{DoxyCompactList}\small\item\em Represent the stack. contain the pointer to the start of the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$ \mbox{\hyperlink{_stack_8h_a07024c474ffedf71428b1af472fc58d9}{Create\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Create a new stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_stack_8h_ac2565fa4934a779402996e4007598fcc}{Delete\+Stack}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Ddelete the given stack with all his values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_stack_8h_a2dfaf2f5b253c0c659376184c6bf6a7f}{Stack\+Push}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack, T item)
+\begin{DoxyCompactList}\small\item\em Push an item to the stack. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{_stack_8h_a4faa2b459be085ea555f713f6917e010}{Stack\+Pop}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Pop the top value from the given stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_stack_8h_a175ce5fccf4a95ec45814e495f750b77}{Stack\+Get\+Last\+Error}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Retuen the last error code of the stack. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{_stack_8h_a892e08886b299bc650f5ca2b464782d9}{Stack\+Size}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Calculate the size if values in the stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_stack_8h_a28d40109ceba468a664376462a0e8301}{Stack\+Print}} (\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em Print the values in the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_stack_8h_a07024c474ffedf71428b1af472fc58d9}\label{_stack_8h_a07024c474ffedf71428b1af472fc58d9}} 
+\index{Stack.h@{Stack.h}!CreateStack@{CreateStack}}
+\index{CreateStack@{CreateStack}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{CreateStack()}{CreateStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}}$\ast$ Create\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a new stack. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the new stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stack_8h_ac2565fa4934a779402996e4007598fcc}\label{_stack_8h_ac2565fa4934a779402996e4007598fcc}} 
+\index{Stack.h@{Stack.h}!DeleteStack@{DeleteStack}}
+\index{DeleteStack@{DeleteStack}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{DeleteStack()}{DeleteStack()}}
+{\footnotesize\ttfamily void Delete\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Ddelete the given stack with all his values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the stack to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stack_8h_a175ce5fccf4a95ec45814e495f750b77}\label{_stack_8h_a175ce5fccf4a95ec45814e495f750b77}} 
+\index{Stack.h@{Stack.h}!StackGetLastError@{StackGetLastError}}
+\index{StackGetLastError@{StackGetLastError}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackGetLastError()}{StackGetLastError()}}
+{\footnotesize\ttfamily int Stack\+Get\+Last\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Retuen the last error code of the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the given stack to check his last error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the last error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stack_8h_a4faa2b459be085ea555f713f6917e010}\label{_stack_8h_a4faa2b459be085ea555f713f6917e010}} 
+\index{Stack.h@{Stack.h}!StackPop@{StackPop}}
+\index{StackPop@{StackPop}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackPop()}{StackPop()}}
+{\footnotesize\ttfamily T Stack\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Pop the top value from the given stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & stack to pop from him \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value in the top of the stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stack_8h_a28d40109ceba468a664376462a0e8301}\label{_stack_8h_a28d40109ceba468a664376462a0e8301}} 
+\index{Stack.h@{Stack.h}!StackPrint@{StackPrint}}
+\index{StackPrint@{StackPrint}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackPrint()}{StackPrint()}}
+{\footnotesize\ttfamily void Stack\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Print the values in the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the stack to be printed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stack_8h_a2dfaf2f5b253c0c659376184c6bf6a7f}\label{_stack_8h_a2dfaf2f5b253c0c659376184c6bf6a7f}} 
+\index{Stack.h@{Stack.h}!StackPush@{StackPush}}
+\index{StackPush@{StackPush}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackPush()}{StackPush()}}
+{\footnotesize\ttfamily void Stack\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack,  }\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Push an item to the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & the stack to push to \\
+\hline
+{\em item} & the value to insert to the stack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stack_8h_a892e08886b299bc650f5ca2b464782d9}\label{_stack_8h_a892e08886b299bc650f5ca2b464782d9}} 
+\index{Stack.h@{Stack.h}!StackSize@{StackSize}}
+\index{StackSize@{StackSize}!Stack.h@{Stack.h}}
+\doxysubsubsection{\texorpdfstring{StackSize()}{StackSize()}}
+{\footnotesize\ttfamily size\+\_\+t Stack\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_stack_8h_af485dab738806ae8f0ecb0aefe14c314}{Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+Calculate the size if values in the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & stack to be calculate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size of the stack 
+\end{DoxyReturn}
